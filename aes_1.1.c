@@ -1,15 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-/*  Possible improvements:
-    1. see the types.h header file
-    2. array vs matrix adderssing
-    3. Storing the state itself in the most efficient manner.
-    4. Making matrix multiplication efficient as we already know one of the matrix
-    4.1 Precompute the 256x2 array for all the bytes
-    5. use gprof with 10000 inputs
-    6. improve the performance thru using row major order instead of column major order, wherever applicable
-*/
-//#define read scanf("")
+
 #define Nk 8 //4 words = 16 bytes key length for AES128, for 192, 256, it shd be 6,8 resp.
 #if Nk==4
 #define AES_ROUNDS 10
@@ -28,7 +19,6 @@
  * Similarly it is 7 for 256-bit 8-word (but there is some diff in impl Check FIPS doc)
  * #total = 7*8+4 = 15*4
  */ 
-//#define FINAL_AES_ROUND
 // Nk is 4,6,8 in FIPS AES implementation, use carefully
 #define uch unsigned char
 #define EKSIZE KEX_ROUNDS*Nk+4
