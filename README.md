@@ -14,4 +14,5 @@ CBC mode implemented over AES.
     - KEYS="000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f"  //for AES-256
 
  3. cbc.c file uses aes_1.1cbc.c file as a dependency. Make sure to keep them together.
+ 4. The padding added is 10000... all zeros.
     
