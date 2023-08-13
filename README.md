@@ -15,4 +15,4 @@ CBC mode implemented over AES.
 
  3. cbc.c file uses aes_1.1cbc.c file as a dependency. Make sure to keep them together.
  4. The padding added is 10000... all zeros.
-    
+ 5. Example vectors taken from https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf
