@@ -144,7 +144,7 @@ int main(){
     
     //for(int j=0;j<16;j++) printf("0x%02x ", state[j]);
     //printf("\n\n");
-    /*
+    /* for gprof usage
     for(int j=0;j<100000;j++) {
         encrypt(state, expandedKey);
         for(int j=0;j<16;j++) printf("0x%02x ", state[j]);
