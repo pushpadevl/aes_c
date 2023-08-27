@@ -17,7 +17,7 @@ UL padAndRetNOBlocks(uch *data, UL sizeOfData){     //check different padding me
     //printf("A%d\n",sizeOfData);
     UL numBytesToAdd = BLOCK_SIZE - sizeOfData%BLOCK_SIZE;
     //printf("B%d\n",numBytesToAdd);
-    data[sizeOfData] = 0x10;
+    data[sizeOfData] = 0x80;
     for(UL i=sizeOfData+1; i<sizeOfData+numBytesToAdd; i++)
         data[i] = 0x00;
     
