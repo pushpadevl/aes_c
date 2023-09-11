@@ -1,5 +1,5 @@
 # aes_c
-AES-128, 192, 256 implementation in C
+AES-128, 192, 256 implementation in C with ISO/IEC 7816-4 standard padding.
 CBC mode implemented over AES.
 
  1. To use different key length in AES over CBC, use command: 
